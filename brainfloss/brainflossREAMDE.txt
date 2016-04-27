@@ -1,0 +1,26 @@
+This is the Software Engineering Group Project of..
+
+It is a math learning game web app for 1st and 2nd grade students.
+
+Aspen Hopkins, Colette Bedoya, Jacob Chavaria, and Kevin Haupt (me)
+
+REQUIREMENTS:
+Django 1.9.2
+Python 2.7.3
+
+if you are missing a requirement, try...
+
+brainfloss.sampleminded.com/login
+
+USAGES:
+>python manage.py runserver
+
+open your favorite web browser and enter:
+localhost:8000/login
+
+OR
+
+Admin credentials are...
+
+username: brain
+password: admin

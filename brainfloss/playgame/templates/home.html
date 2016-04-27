@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<head>
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Hello, {{user.student.get_student_fname}}!</h1>
+            
+            <p>You are on your Dashboard....</p>
+          <span style="color:#008000"> <a href="/stats" target="_blank"> <button  type="button" >View your Stats Here!</button> </a>
+          </span>
+            <p>Directions: Choose addition or subtraction and the level desired</p>
+            <div>
+                </head>
+                <body>
+                    <pre>
+               <span style="color:#FF3D3D"> <h1>Addition    Subtraction</h1>
+                    </pre>
+                <table style="width:100%">
+ <tr>
+    <td><a type="button" href="/play?current_state=1&play_type=1" class="btn btn-primary btn-lg">Play Addition Level 1</a></td>
+    <td><a type="button" href="/play?current_state=1&play_type=2" class="btn btn-primary btn-lg">Play Subtraction Level 1</a></td>
+    <td><a type="button" href="/play?current_state=1&play_type=3" class="btn btn-primary btn-lg">Play Number Placement Level 1</a></td>
+    
+  </tr>
+  <tr>
+    <td><a type="button" href="/play?current_state=2&play_type=1" class="btn btn-primary btn-lg">Play Addition Level 2</a></td>
+    <td><a type="button" href="/play?current_state=2&play_type=2" class="btn btn-primary btn-lg">Play Subtraction Level 2</a></td>
+    <td><a type="button" href="/play?current_state=2&play_type=3" class="btn btn-primary btn-lg">Play Number Placement Level 2</a></td> 
+  </tr>
+<tr>
+    <td><a type="button" href="/play?current_state=3&play_type=1" class="btn btn-primary btn-lg">Play Addition Level 3</a></td>
+    <td><a type="button" href="/play?current_state=3&play_type=2" class="btn btn-primary btn-lg">Play Subtraction Level 3</a></td>
+    <td><a type="button" href="/play?current_state=3&play_type=3" class="btn btn-primary btn-lg">Play Number Placement Level 3</a></td>
+  </tr>
+            
+               
+
+
+                </span>
+                
+            
+            </body>
+            
+         
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
